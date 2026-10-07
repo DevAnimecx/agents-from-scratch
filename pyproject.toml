@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agents-from-scratch"
+version = "0.1.0"
+description = "Build production AI agents from first principles with raw Python."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [{ name = "agents-from-scratch contributors" }]
+keywords = ["ai-agents", "llm", "rag", "react-agent", "multi-agent", "mcp", "python"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = ["numpy>=1.26,<3", "httpx>=0.27,<1"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0,<9", "ruff>=0.6,<1"]
+docs = ["mkdocs-material>=9.5,<10"]
+lesson-02 = ["ollama>=0.3"]
+lesson-04 = ["sentence-transformers>=3.0"]
+lesson-06 = ["chromadb>=0.5", "rank-bm25>=0.2"]
+lesson-07 = ["openai>=1.40"]
+lesson-09 = ["mcp>=1.0"]
+lesson-16 = ["opentelemetry-api>=1.27"]
+lesson-17 = ["deepeval>=1.0", "guardrails-ai>=0.5"]
+
+[project.scripts]
+aspiro-agent = "phase4.react_agent:main"
+aspiro-mcp = "phase3.mcp_server:main"
+
+[tool.setuptools]
+include-package-data = true
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+exclude = ["notebooks"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = ["E501"]

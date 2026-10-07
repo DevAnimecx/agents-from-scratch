@@ -1,0 +1,7 @@
+{
+  "name": "agents-from-scratch-production-agent",
+  "version": "0.1.0",
+  "description": "Offline production-shaped agent artifact from lesson 18.",
+  "command": ["python", "server.py"],
+  "healthcheck": {"type": "stdio", "timeout_seconds": 5}
+}

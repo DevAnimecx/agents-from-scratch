@@ -1,0 +1,123 @@
+site_name: agents-from-scratch
+site_description: Build production AI agents from first principles in raw Python.
+site_url: https://aspiro.dev/
+repo_url: https://github.com/DevAnimecx/agents-from-scratch
+repo_name: DevAnimecx/agents-from-scratch
+edit_uri: edit/main/docs/
+theme:
+  name: material
+  custom_dir: docs/overrides
+  language: en
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.action.edit
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: emerald
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: emerald
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+extra:
+  homepage: https://github.com/DevAnimecx/agents-from-scratch
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/DevAnimecx/agents-from-scratch
+  alternate:
+    - name: English
+      link: ./
+      lang: en
+    - name: हिन्दी
+      link: ./i18n/hi/
+      lang: hi
+    - name: Español
+      link: ./i18n/es/
+      lang: es
+    - name: 日本語
+      link: ./i18n/ja/
+      lang: ja
+    - name: Deutsch
+      link: ./i18n/de/
+      lang: de
+    - name: Português
+      link: ./i18n/pt-BR/
+      lang: pt-BR
+    - name: தமிழ்
+      link: ./i18n/ta/
+      lang: ta
+    - name: मराठी
+      link: ./i18n/mr/
+      lang: mr
+    - name: 한국어
+      link: ./i18n/ko/
+      lang: ko
+    - name: Français
+      link: ./i18n/fr/
+      lang: fr
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - javascripts/progress.js
+  - javascripts/faq-schema.js
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+plugins:
+  - search
+nav:
+  - Home: index.md
+  - Phase 1 · Context & Memory:
+      - Lesson 01 · Token budgeting: phase-1-context-memory/lesson-01-token-budgeting.md
+      - Lesson 02 · Summarization: phase-1-context-memory/lesson-02-summarization.md
+      - Lesson 03 · Long-term memory: phase-1-context-memory/lesson-03-long-term-memory.md
+  - Phase 2 · RAG:
+      - Lesson 04 · Embeddings: phase-2-rag/lesson-04-embeddings-from-scratch.md
+      - Lesson 05 · Chunking: phase-2-rag/lesson-05-chunking.md
+      - Lesson 06 · Search & reranking: phase-2-rag/lesson-06-vector-search-reranking.md
+  - Phase 3 · Tool use:
+      - Lesson 07 · Function calling: phase-3-tool-use/lesson-07-function-calling.md
+      - Lesson 08 · Tool registry: phase-3-tool-use/lesson-08-tool-registry.md
+      - Lesson 09 · MCP: phase-3-tool-use/lesson-09-mcp.md
+  - Phase 4 · Planning:
+      - Lesson 10 · ReAct: phase-4-planning/lesson-10-react-agent.md
+      - Lesson 11 · Tree of thought: phase-4-planning/lesson-11-tree-of-thought.md
+      - Lesson 12 · Reflection: phase-4-planning/lesson-12-self-reflection.md
+  - Phase 5 · Multi-agent:
+      - Lesson 13 · Message passing: phase-5-multi-agent/lesson-13-message-passing.md
+      - Lesson 14 · Orchestration: phase-5-multi-agent/lesson-14-orchestration.md
+      - Lesson 15 · Consensus: phase-5-multi-agent/lesson-15-consensus.md
+  - Phase 6 · Production:
+      - Lesson 16 · Observability: phase-6-production/lesson-16-observability.md
+      - Lesson 17 · Evals & guardrails: phase-6-production/lesson-17-evals-guardrails.md
+      - Lesson 18 · Deployment: phase-6-production/lesson-18-deployment.md
+  - Phase 7 · Indic languages:
+      - Lesson 19 · Code-mixed RAG: phase-7-indic-languages/lesson-19-code-mixed-rag.md
+      - Lesson 20 · Regional tool use: phase-7-indic-languages/lesson-20-regional-tool-use.md

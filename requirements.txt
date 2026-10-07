@@ -1,0 +1,8 @@
+# Core lessons
+numpy>=1.26,<3
+httpx>=0.27,<1
+
+# Development and docs (install with: pip install -e '.[dev,docs]')
+pytest>=8.0,<9
+ruff>=0.6,<1
+mkdocs-material>=9.5,<10

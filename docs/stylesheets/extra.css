@@ -1,0 +1,8 @@
+:root { --aspiro-violet: #7c3aed; --aspiro-green: #10b981; }
+.md-header, .md-tabs { background: #0f0f23; }
+.md-typeset h1 { font-weight: 800; letter-spacing: -0.03em; }
+.md-typeset h2 { margin-top: 2.2em; }
+.progress-card { border: 1px solid color-mix(in srgb, var(--aspiro-violet) 35%, transparent); border-radius: .75rem; padding: 1rem; margin: 1rem 0 2rem; }
+.progress-track { background: var(--md-default-fg-color--lightest); border-radius: 999px; height: .5rem; margin: .75rem 0; overflow: hidden; }
+.progress-track span { background: var(--aspiro-green); display: block; height: 100%; transition: width .2s ease; width: 0; }
+.md-button[data-progress-reset] { cursor: pointer; font-size: .75rem; }

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block announce %}
+  <a href="{{ config.repo_url }}">Build the agent pipeline by hand. Then use the framework.</a>
+{% endblock %}
+{% block site_meta %}
+  {{ super() }}
+  <meta property="og:title" content="agents-from-scratch · Build AI agents from first principles">
+  <meta property="og:description" content="20 offline-first Python lessons covering RAG, tool use, ReAct, MCP, multi-agent systems, and production.">
+{% endblock %}
+{% block footer %}
+  {{ super() }}
+  <p class="md-footer-meta__inner md-grid">Powered by Aspiro · MIT licensed · Built with ☕ by the community</p>
+{% endblock %}

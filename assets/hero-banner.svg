@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
+ <title id="title">Build the agent pipeline by hand</title><desc id="desc">A dark terminal-style banner showing context, RAG, tools, planning, and production.</desc>
+ <defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#0f0f23"/><stop offset="1" stop-color="#24104f"/></linearGradient><linearGradient id="line" x1="0" x2="1"><stop stop-color="#7c3aed"/><stop offset="1" stop-color="#10b981"/></linearGradient></defs>
+ <rect width="1200" height="500" rx="24" fill="url(#bg)"/><circle cx="1060" cy="-20" r="260" fill="#7c3aed" opacity=".13"/><circle cx="140" cy="520" r="220" fill="#10b981" opacity=".08"/>
+ <rect x="70" y="75" width="1060" height="350" rx="14" fill="#090916" stroke="#51417d"/>
+ <circle cx="100" cy="103" r="6" fill="#ef4444"/><circle cx="122" cy="103" r="6" fill="#f59e0b"/><circle cx="144" cy="103" r="6" fill="#10b981"/>
+ <text x="95" y="170" fill="#a78bfa" font-family="monospace" font-size="28">$ python agent.py</text>
+ <text x="95" y="215" fill="#d1fae5" font-family="monospace" font-size="24">think → act → observe → answer</text>
+ <path d="M110 275h180l45-40 85 80 85-80 85 80 85-40h190" fill="none" stroke="url(#line)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+ <circle cx="110" cy="275" r="8" fill="#10b981"/><circle cx="1100" cy="275" r="8" fill="#a78bfa"/>
+ <text x="95" y="350" fill="#94a3b8" font-family="monospace" font-size="22">80 lines of Python</text><text x="775" y="350" fill="#10b981" font-family="monospace" font-size="22">then: framework</text>
+ <text x="95" y="388" fill="#f8fafc" font-family="Inter,Arial,sans-serif" font-size="32" font-weight="700">agents-from-scratch</text>
+</svg>

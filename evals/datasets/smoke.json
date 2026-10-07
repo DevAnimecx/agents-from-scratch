@@ -1,0 +1,4 @@
+[
+  {"prompt": "What does retrieval augmented generation retrieve?", "expected": "rag"},
+  {"prompt": "What is a bounded tool loop?", "expected": "agent"}
+]
