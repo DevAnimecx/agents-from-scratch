@@ -46,31 +46,31 @@ extra:
       link: ./
       lang: en
     - name: हिन्दी
-      link: ./i18n/hi/
+      link: https://github.com/DevAnimecx/agents-from-scratch/blob/main/i18n/hi/README.md
       lang: hi
     - name: Español
-      link: ./i18n/es/
+      link: https://github.com/DevAnimecx/agents-from-scratch/blob/main/i18n/es/README.md
       lang: es
     - name: 日本語
-      link: ./i18n/ja/
+      link: https://github.com/DevAnimecx/agents-from-scratch/blob/main/i18n/ja/README.md
       lang: ja
     - name: Deutsch
-      link: ./i18n/de/
+      link: https://github.com/DevAnimecx/agents-from-scratch/blob/main/i18n/de/README.md
       lang: de
     - name: Português
-      link: ./i18n/pt-BR/
+      link: https://github.com/DevAnimecx/agents-from-scratch/blob/main/i18n/pt-BR/README.md
       lang: pt-BR
     - name: தமிழ்
-      link: ./i18n/ta/
+      link: https://github.com/DevAnimecx/agents-from-scratch/blob/main/i18n/ta/README.md
       lang: ta
     - name: मराठी
-      link: ./i18n/mr/
+      link: https://github.com/DevAnimecx/agents-from-scratch/blob/main/i18n/mr/README.md
       lang: mr
     - name: 한국어
-      link: ./i18n/ko/
+      link: https://github.com/DevAnimecx/agents-from-scratch/blob/main/i18n/ko/README.md
       lang: ko
     - name: Français
-      link: ./i18n/fr/
+      link: https://github.com/DevAnimecx/agents-from-scratch/blob/main/i18n/fr/README.md
       lang: fr
 extra_css:
   - stylesheets/extra.css
